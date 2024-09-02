@@ -17,13 +17,16 @@ function GitHubForm() {
 
     try {
       // Make a request to the backend for evaluation
-      const response = await fetch("http://localhost:3001/evaluate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ url }),
-      });
+      const response = await fetch(
+        "https://repo-evaluator.vercel.app/evaluate",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ url }),
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();
