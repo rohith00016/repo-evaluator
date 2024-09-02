@@ -1,0 +1,19 @@
+{
+  "name": "repo-evaluator",
+  "version": "1.0.0",
+  "description": "A project for evaluating GitHub repositories with automated tests",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "rohith",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "child-process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
